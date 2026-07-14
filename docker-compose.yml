@@ -17,9 +17,7 @@ services:
     networks:
       - notes-app-nw
   django_app:
-    build:
-      context: .
-    image: django_image 
+    image: "farhancloud/notes-app"
     container_name: "django_cont"
     env_file:
       - ".env"
